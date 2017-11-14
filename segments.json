@@ -1,0 +1,50 @@
+{
+  "left" : {
+    "a" : { "pin" : 8, "index" : 6 },
+    "b" : { "pin" : 7, "index" : 5 },
+    "c" : { "pin" : 11, "index" : 9 },
+    "d" : { "pin" : 12, "index" : 10 },
+    "e" : { "pin" : 13, "index" : 11 },
+    "f" : { "pin" : 10, "index" : 8 },
+    "g" : { "pin" : 9, "index" : 7 }
+  },
+  "right" : {
+    "a" : { "pin" : 15, "index" : 13 },
+    "b" : { "pin" : 14, "index" : 12 },
+    "c" : { "pin" : 4, "index" : 2 },
+    "d" : { "pin" : 5, "index" : 3 },
+    "e" : { "pin" : 6, "index" : 4 },
+    "f" : { "pin" : 3, "index" : 1 },
+    "g" : { "pin" : 2, "index" : 0 }
+  },
+  "zero" : [
+    "a", "b", "c", "d", "e", "f"
+  ],
+  "one" : [
+    "b", "c" 
+  ],
+  "two" : [
+    "a", "b", "d", "e", "g"
+  ],
+  "three" : [
+    "a", "b", "c", "d", "g"
+  ],
+  "four" : [
+    "b", "c", "f", "g"
+  ],
+  "five" : [
+    "a", "c", "d", "f", "g"
+  ],
+  "six" : [
+    "a", "c", "d", "e", "f", "g"
+  ],
+  "seven" : [
+    "a", "b", "c"
+  ],
+  "eight" : [
+    "a", "b", "c", "d", "e", "f", "g"
+  ],
+  "nine" : [
+    "a", "b", "c", "d", "f", "g"
+  ]
+}
