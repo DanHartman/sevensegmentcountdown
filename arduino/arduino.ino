@@ -593,16 +593,16 @@ void setup() {
   }
   byte second, minute, hour, dayOfWeek, dayOfMonth, month, year;
   Wire.begin();
-  // Serial.begin(9600);
+  Serial.begin(9600);
   
   // Change these values to what you want to set your clock to.
   // and then comment out the setDateDs1307 call.
   //and upload sketch again
-  second = 0;
-  minute = 20;
-  hour = 13;
-  dayOfWeek = 2;
-  dayOfMonth = 14;
+  second = 15;
+  minute = 12;
+  hour = 0;
+  dayOfWeek = 5;
+  dayOfMonth = 16;
   month = 11;
   year = 17;
 // setDateDs1307(second, minute, hour, dayOfWeek, dayOfMonth, month, year);
@@ -623,7 +623,19 @@ void loop() {
   byte yearA;
   byte monthA;
   getDateDs1307(&second, &minute, &hour, &dayOfWeek, &dayOfMonth, &month, &year);
-  
+  Serial.print(hour, DEC);// convert the byte variable to a decimal number when being displayed
+  Serial.print(":");
+  if (minute<10) {
+    Serial.print("0");
+  }
+  Serial.print(minute, DEC);
+  Serial.print(":");
+  if (second<10) {
+    Serial.print("0");
+  }
+  Serial.print(second, DEC);
+  Serial.println("  ");
+
   if (month <3) {//if month is January or February subtract 1 from year and use in yearA
     yearA=year-1;
   } else {
